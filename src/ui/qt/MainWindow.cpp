@@ -39,9 +39,8 @@ MainWindow::MainWindow() : QMainWindow(nullptr) {
   createElements();
   routeSignals();
 
-  auto infostring = QString("Running %1 (%4, %5), BASS %2, Qt %3")
+  auto infostring = QString("Running %1 (%4, %5), Qt %3")
                         .arg(VGMTRANS_VERSION)
-                        .arg(int(BASS_GetVersion()), 0, 16)
                         .arg(qVersion())
                         .arg(VGMTRANS_REVISION)
                         .arg(VGMTRANS_BRANCH)
